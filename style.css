@@ -7,6 +7,10 @@ body {
    font-family: 'Quicksand',
    sans-serif;
    background-color: #9dccdb;
+      background: hsla(209, 100%, 47%, 0.1);
+      background-image: radial-gradient(hsla(209, 100%, 47%, 1.00) 5%, transparent 0);
+      background-size: 20px 20px;
+   }
 }
 
 h1 {
