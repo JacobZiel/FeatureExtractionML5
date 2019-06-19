@@ -3,7 +3,6 @@ let video;
 let label = ""
 let toClear;
 
-
 function modelReady(){
    console.log("model is Ready!")
    mobilenet.predict(gotResults)
@@ -18,12 +17,8 @@ function gotResults(error, results){
       mobilenet.predict(gotResults)
       toClear.clear()
    }
-
 }
 
-// function imageReady() {
-//    image(puffin, 0, 0, width, height);
-// }
 
 function  setup () {
    createCanvas(640, 550);
@@ -33,11 +28,11 @@ function  setup () {
    mobilenet = ml5.imageClassifier('MobileNet', video, modelReady)
 }
 
-function draw(){
-image(video, 0, 0)
+function draw(){ 
+image(video, 0, 0,)
 fill(0);
 textSize(32)
-toClear = text(label, 10, height - 20)
+toClear = text(label, 70, height - 20)
 }
 
 
