@@ -55,3 +55,6 @@ img {
    margin: 0;
 }
 
+canvas {
+   border-radius: 10px;
+}
