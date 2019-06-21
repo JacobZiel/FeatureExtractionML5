@@ -1,7 +1,7 @@
 body {
    margin-top: 50px;
    display: flex;
-   flex-direction: column;
+   /* flex-direction: column; */
    justify-content: center;
    align-items: center;
    font-family: 'Quicksand',
@@ -11,18 +11,28 @@ body {
       background-image: radial-gradient(hsla(209, 100%, 47%, 1.00) 5%, transparent 0);
       background-size: 20px 20px;
    }
-}
+
 
 h1 {
-   margin: 60px;
+   margin: 0;
+   font-size: 16px;
 }
 
+#test {
+   font-size: 56;
+}
 
-img {
- width: 400px;
- border-radius: 5px;
- margin-bottom: 10px;
- box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+#results {
+
+height: 100px;
+width: 200px;
+border: 1px solid black;
+border-radius: 4px;
+}
+
+#header {
+   display: flex;
+   flex-direction: column;
 }
 
 
@@ -30,4 +40,12 @@ img {
 canvas {
    border-radius: 10px;
    box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+   /* margin-bottom: 50px;
+   padding: 5px; */
+   visibility: hidden;
+}
+
+button {
+   margin: 10px;
+   padding: 8px;
 }
